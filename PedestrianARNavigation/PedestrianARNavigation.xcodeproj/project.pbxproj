@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8732C3D02087B88E00910E74 /* PedestrianARNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8732C3CF2087B88E00910E74 /* PedestrianARNavigationTests.swift */; };
 		8735E17620850305008BA9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E17520850305008BA9F4 /* AppDelegate.swift */; };
 		8735E17820850305008BA9F4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8735E17720850305008BA9F4 /* art.scnassets */; };
 		8735E17A20850305008BA9F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E17920850305008BA9F4 /* ViewController.swift */; };
@@ -40,7 +41,20 @@
 		8735E1D320851E1F008BA9F4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1D220851E1F008BA9F4 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8732C3D22087B88E00910E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8735E16A20850305008BA9F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8735E17120850305008BA9F4;
+			remoteInfo = PedestrianARNavigation;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8732C3CD2087B88E00910E74 /* PedestrianARNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedestrianARNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8732C3CF2087B88E00910E74 /* PedestrianARNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedestrianARNavigationTests.swift; sourceTree = "<group>"; };
+		8732C3D12087B88E00910E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8735E17220850305008BA9F4 /* PedestrianARNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedestrianARNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8735E17520850305008BA9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8735E17720850305008BA9F4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -77,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8732C3CA2087B88E00910E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8735E16F20850305008BA9F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,10 +109,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8732C3CE2087B88E00910E74 /* PedestrianARNavigationTests */ = {
+			isa = PBXGroup;
+			children = (
+				8732C3CF2087B88E00910E74 /* PedestrianARNavigationTests.swift */,
+				8732C3D12087B88E00910E74 /* Info.plist */,
+			);
+			path = PedestrianARNavigationTests;
+			sourceTree = "<group>";
+		};
 		8735E16920850305008BA9F4 = {
 			isa = PBXGroup;
 			children = (
 				8735E17420850305008BA9F4 /* PedestrianARNavigation */,
+				8732C3CE2087B88E00910E74 /* PedestrianARNavigationTests */,
 				8735E17320850305008BA9F4 /* Products */,
 				8735E1CF20851DBE008BA9F4 /* Frameworks */,
 			);
@@ -101,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				8735E17220850305008BA9F4 /* PedestrianARNavigation.app */,
+				8732C3CD2087B88E00910E74 /* PedestrianARNavigationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +250,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8732C3CC2087B88E00910E74 /* PedestrianARNavigationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8732C3D62087B88E00910E74 /* Build configuration list for PBXNativeTarget "PedestrianARNavigationTests" */;
+			buildPhases = (
+				8732C3C92087B88E00910E74 /* Sources */,
+				8732C3CA2087B88E00910E74 /* Frameworks */,
+				8732C3CB2087B88E00910E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8732C3D32087B88E00910E74 /* PBXTargetDependency */,
+			);
+			name = PedestrianARNavigationTests;
+			productName = PedestrianARNavigationTests;
+			productReference = 8732C3CD2087B88E00910E74 /* PedestrianARNavigationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8735E17120850305008BA9F4 /* PedestrianARNavigation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8735E18620850306008BA9F4 /* Build configuration list for PBXNativeTarget "PedestrianARNavigation" */;
@@ -245,6 +295,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Yandex, LLC";
 				TargetAttributes = {
+					8732C3CC2087B88E00910E74 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8735E17120850305008BA9F4;
+					};
 					8735E17120850305008BA9F4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -270,11 +325,19 @@
 			projectRoot = "";
 			targets = (
 				8735E17120850305008BA9F4 /* PedestrianARNavigation */,
+				8732C3CC2087B88E00910E74 /* PedestrianARNavigationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8732C3CB2087B88E00910E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8735E17020850305008BA9F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +352,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8732C3C92087B88E00910E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8732C3D02087B88E00910E74 /* PedestrianARNavigationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8735E16E20850305008BA9F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +395,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8732C3D32087B88E00910E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8735E17120850305008BA9F4 /* PedestrianARNavigation */;
+			targetProxy = 8732C3D22087B88E00910E74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8735E17B20850305008BA9F4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -344,6 +423,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8732C3D42087B88E00910E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 477EAT77S3;
+				INFOPLIST_FILE = PedestrianARNavigationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yandex--LLC.PedestrianARNavigationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PedestrianARNavigation.app/PedestrianARNavigation";
+			};
+			name = Debug;
+		};
+		8732C3D52087B88E00910E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 477EAT77S3;
+				INFOPLIST_FILE = PedestrianARNavigationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yandex--LLC.PedestrianARNavigationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PedestrianARNavigation.app/PedestrianARNavigation";
+			};
+			name = Release;
+		};
 		8735E18420850306008BA9F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -488,6 +599,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8732C3D62087B88E00910E74 /* Build configuration list for PBXNativeTarget "PedestrianARNavigationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8732C3D42087B88E00910E74 /* Debug */,
+				8732C3D52087B88E00910E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8735E16D20850305008BA9F4 /* Build configuration list for PBXProject "PedestrianARNavigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

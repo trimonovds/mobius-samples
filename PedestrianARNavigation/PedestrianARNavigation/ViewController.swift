@@ -210,12 +210,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             guard let routeFinishHint = slf.routeFinishHint else { return }
             guard let routeFinishView = slf.routeFinishView else { return }
             guard let routeDistanceLabel = slf.routeDistanceLabel else { return }
-            let placemarkSize = slf.finishPlacemarkSize(
+            let placemarkSize = ViewController.finishPlacemarkSize(
                 forDistance: CGFloat(distanceToFinishNode),
                 closeDistance: 10.0,
                 farDistance: 25.0,
-                minSize: 50.0,
-                maxSize: 100.0
+                closeDistanceSize: 100.0,
+                farDistanceSize: 50.0
             )
 
             let distance = floor(distanceToFinishNode)
@@ -349,7 +349,7 @@ extension ViewController: MapViewControllerDelegate {
     }
 }
 
-fileprivate extension ViewController {
+extension ViewController {
 
     static func distanceText(forString string: String) -> NSAttributedString {
         return NSMutableAttributedString(string: string, attributes: [
@@ -390,20 +390,20 @@ fileprivate extension ViewController {
     ///
     /// - Parameters:
     ///   - distance: distance to route finish
-    func finishPlacemarkSize(forDistance distance: CGFloat, closeDistance: CGFloat, farDistance: CGFloat,
-                             minSize: CGFloat, maxSize: CGFloat) -> CGFloat
+    static func finishPlacemarkSize(forDistance distance: CGFloat, closeDistance: CGFloat, farDistance: CGFloat,
+                             closeDistanceSize: CGFloat, farDistanceSize: CGFloat) -> CGFloat
     {
         guard closeDistance >= 0 else { assert(false); return 0.0 }
         guard closeDistance >= 0, farDistance >= 0, closeDistance <= farDistance else { assert(false); return 0.0 }
 
         if distance > farDistance {
-            return minSize
+            return farDistanceSize
         } else if distance < closeDistance{
-            return maxSize
+            return closeDistanceSize
         } else {
-            let delta = maxSize - minSize
+            let delta = farDistanceSize - closeDistanceSize
             let percent: CGFloat = ((distance - closeDistance) / (farDistance - closeDistance))
-            let size = minSize + delta * percent
+            let size = closeDistanceSize + delta * percent
             return size
         }
     }
