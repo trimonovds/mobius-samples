@@ -1,6 +1,5 @@
 # mobius-samples
 
-В репозитории выложены 3 проекта:
 ### FinishPlacemarkHint 
 показывает как можно реализовать вспомогательную метку в ARKit
 ### RoutePolyline 
