@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8735E17620850305008BA9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E17520850305008BA9F4 /* AppDelegate.swift */; };
+		8735E17820850305008BA9F4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8735E17720850305008BA9F4 /* art.scnassets */; };
+		8735E17A20850305008BA9F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E17920850305008BA9F4 /* ViewController.swift */; };
+		8735E17D20850305008BA9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8735E17B20850305008BA9F4 /* Main.storyboard */; };
+		8735E17F20850306008BA9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8735E17E20850306008BA9F4 /* Assets.xcassets */; };
+		8735E18220850306008BA9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8735E18020850306008BA9F4 /* LaunchScreen.storyboard */; };
+		8735E19220850340008BA9F4 /* RouteNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1892085033F008BA9F4 /* RouteNodes.swift */; };
+		8735E19320850340008BA9F4 /* RouteAnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E18A2085033F008BA9F4 /* RouteAnimationUtils.swift */; };
+		8735E19420850340008BA9F4 /* RouteArrowAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E18B20850340008BA9F4 /* RouteArrowAnimation.swift */; };
+		8735E19520850340008BA9F4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E18D20850340008BA9F4 /* Utils.swift */; };
+		8735E19620850340008BA9F4 /* VectorMath+QuartzCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E18F20850340008BA9F4 /* VectorMath+QuartzCore.swift */; };
+		8735E19720850340008BA9F4 /* VectorMath+SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E19020850340008BA9F4 /* VectorMath+SceneKit.swift */; };
+		8735E19820850340008BA9F4 /* VectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E19120850340008BA9F4 /* VectorMath.swift */; };
+		8735E1A72085038A008BA9F4 /* ARKitCoreLocationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E19A2085038A008BA9F4 /* ARKitCoreLocationEngine.swift */; };
+		8735E1A82085038A008BA9F4 /* GeoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E19C2085038A008BA9F4 /* GeoExtensions.swift */; };
+		8735E1A92085038A008BA9F4 /* AdvancedLocationEstimatesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E19E2085038A008BA9F4 /* AdvancedLocationEstimatesHolder.swift */; };
+		8735E1AA2085038A008BA9F4 /* BasicLocationEstimatesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E19F2085038A008BA9F4 /* BasicLocationEstimatesHolder.swift */; };
+		8735E1AB2085038A008BA9F4 /* LocationEstimatesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1A02085038A008BA9F4 /* LocationEstimatesHolder.swift */; };
+		8735E1AC2085038A008BA9F4 /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1A12085038A008BA9F4 /* SceneLocationEstimate+Extensions.swift */; };
+		8735E1AD2085038A008BA9F4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1A32085038A008BA9F4 /* LocationManager.swift */; };
+		8735E1AE2085038A008BA9F4 /* NativeLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1A42085038A008BA9F4 /* NativeLocationManager.swift */; };
+		8735E1AF2085038A008BA9F4 /* TrueNorthCorrector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1A62085038A008BA9F4 /* TrueNorthCorrector.swift */; };
+		8735E1B6208503D7008BA9F4 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1B1208503D7008BA9F4 /* ArrayExtensions.swift */; };
+		8735E1B7208503D7008BA9F4 /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1B2208503D7008BA9F4 /* AutoLayout.swift */; };
+		8735E1B8208503D7008BA9F4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1B3208503D7008BA9F4 /* Geometry.swift */; };
+		8735E1B9208503D7008BA9F4 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1B4208503D7008BA9F4 /* Notifier.swift */; };
+		8735E1BA208503D7008BA9F4 /* TimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1B5208503D7008BA9F4 /* TimerAction.swift */; };
+		8735E1C520850439008BA9F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1BB20850439008BA9F4 /* Constants.swift */; };
+		8735E1CE2085044E008BA9F4 /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1CD2085044E008BA9F4 /* SCNVector3Extensions.swift */; };
+		8735E1D120851DBE008BA9F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8735E1D020851DBE008BA9F4 /* MapKit.framework */; };
+		8735E1D320851E1F008BA9F4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735E1D220851E1F008BA9F4 /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8735E17220850305008BA9F4 /* PedestrianARNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedestrianARNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8735E17520850305008BA9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8735E17720850305008BA9F4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		8735E17920850305008BA9F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8735E17C20850305008BA9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8735E17E20850306008BA9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8735E18120850306008BA9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8735E18320850306008BA9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8735E1892085033F008BA9F4 /* RouteNodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteNodes.swift; sourceTree = "<group>"; };
+		8735E18A2085033F008BA9F4 /* RouteAnimationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteAnimationUtils.swift; sourceTree = "<group>"; };
+		8735E18B20850340008BA9F4 /* RouteArrowAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteArrowAnimation.swift; sourceTree = "<group>"; };
+		8735E18D20850340008BA9F4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8735E18F20850340008BA9F4 /* VectorMath+QuartzCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VectorMath+QuartzCore.swift"; sourceTree = "<group>"; };
+		8735E19020850340008BA9F4 /* VectorMath+SceneKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VectorMath+SceneKit.swift"; sourceTree = "<group>"; };
+		8735E19120850340008BA9F4 /* VectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorMath.swift; sourceTree = "<group>"; };
+		8735E19A2085038A008BA9F4 /* ARKitCoreLocationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARKitCoreLocationEngine.swift; sourceTree = "<group>"; };
+		8735E19C2085038A008BA9F4 /* GeoExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoExtensions.swift; sourceTree = "<group>"; };
+		8735E19E2085038A008BA9F4 /* AdvancedLocationEstimatesHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedLocationEstimatesHolder.swift; sourceTree = "<group>"; };
+		8735E19F2085038A008BA9F4 /* BasicLocationEstimatesHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLocationEstimatesHolder.swift; sourceTree = "<group>"; };
+		8735E1A02085038A008BA9F4 /* LocationEstimatesHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEstimatesHolder.swift; sourceTree = "<group>"; };
+		8735E1A12085038A008BA9F4 /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		8735E1A32085038A008BA9F4 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8735E1A42085038A008BA9F4 /* NativeLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLocationManager.swift; sourceTree = "<group>"; };
+		8735E1A62085038A008BA9F4 /* TrueNorthCorrector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrueNorthCorrector.swift; sourceTree = "<group>"; };
+		8735E1B1208503D7008BA9F4 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		8735E1B2208503D7008BA9F4 /* AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayout.swift; sourceTree = "<group>"; };
+		8735E1B3208503D7008BA9F4 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		8735E1B4208503D7008BA9F4 /* Notifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		8735E1B5208503D7008BA9F4 /* TimerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerAction.swift; sourceTree = "<group>"; };
+		8735E1BB20850439008BA9F4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8735E1CD2085044E008BA9F4 /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
+		8735E1D020851DBE008BA9F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8735E1D220851E1F008BA9F4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8735E16F20850305008BA9F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8735E1D120851DBE008BA9F4 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8735E16920850305008BA9F4 = {
+			isa = PBXGroup;
+			children = (
+				8735E17420850305008BA9F4 /* PedestrianARNavigation */,
+				8735E17320850305008BA9F4 /* Products */,
+				8735E1CF20851DBE008BA9F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8735E17320850305008BA9F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8735E17220850305008BA9F4 /* PedestrianARNavigation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8735E17420850305008BA9F4 /* PedestrianARNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				8735E1992085038A008BA9F4 /* ARKit+CoreLocation */,
+				8735E1BB20850439008BA9F4 /* Constants.swift */,
+				8735E18A2085033F008BA9F4 /* RouteAnimationUtils.swift */,
+				8735E18B20850340008BA9F4 /* RouteArrowAnimation.swift */,
+				8735E1892085033F008BA9F4 /* RouteNodes.swift */,
+				8735E18C20850340008BA9F4 /* Utils */,
+				8735E18E20850340008BA9F4 /* VectorMath */,
+				8735E17520850305008BA9F4 /* AppDelegate.swift */,
+				8735E17720850305008BA9F4 /* art.scnassets */,
+				8735E17920850305008BA9F4 /* ViewController.swift */,
+				8735E17B20850305008BA9F4 /* Main.storyboard */,
+				8735E17E20850306008BA9F4 /* Assets.xcassets */,
+				8735E18020850306008BA9F4 /* LaunchScreen.storyboard */,
+				8735E18320850306008BA9F4 /* Info.plist */,
+				8735E1D220851E1F008BA9F4 /* MapViewController.swift */,
+			);
+			path = PedestrianARNavigation;
+			sourceTree = "<group>";
+		};
+		8735E18C20850340008BA9F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8735E1B0208503D7008BA9F4 /* Utilities */,
+				8735E18D20850340008BA9F4 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8735E18E20850340008BA9F4 /* VectorMath */ = {
+			isa = PBXGroup;
+			children = (
+				8735E18F20850340008BA9F4 /* VectorMath+QuartzCore.swift */,
+				8735E19020850340008BA9F4 /* VectorMath+SceneKit.swift */,
+				8735E19120850340008BA9F4 /* VectorMath.swift */,
+			);
+			path = VectorMath;
+			sourceTree = "<group>";
+		};
+		8735E1992085038A008BA9F4 /* ARKit+CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				8735E19A2085038A008BA9F4 /* ARKitCoreLocationEngine.swift */,
+				8735E19B2085038A008BA9F4 /* GeoExtensions */,
+				8735E19D2085038A008BA9F4 /* LocationEstimatesHolder */,
+				8735E1A22085038A008BA9F4 /* LocationManager */,
+				8735E1A52085038A008BA9F4 /* TrueNorthCorrector */,
+			);
+			path = "ARKit+CoreLocation";
+			sourceTree = "<group>";
+		};
+		8735E19B2085038A008BA9F4 /* GeoExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				8735E19C2085038A008BA9F4 /* GeoExtensions.swift */,
+			);
+			path = GeoExtensions;
+			sourceTree = "<group>";
+		};
+		8735E19D2085038A008BA9F4 /* LocationEstimatesHolder */ = {
+			isa = PBXGroup;
+			children = (
+				8735E19E2085038A008BA9F4 /* AdvancedLocationEstimatesHolder.swift */,
+				8735E19F2085038A008BA9F4 /* BasicLocationEstimatesHolder.swift */,
+				8735E1A02085038A008BA9F4 /* LocationEstimatesHolder.swift */,
+				8735E1A12085038A008BA9F4 /* SceneLocationEstimate+Extensions.swift */,
+			);
+			path = LocationEstimatesHolder;
+			sourceTree = "<group>";
+		};
+		8735E1A22085038A008BA9F4 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				8735E1A32085038A008BA9F4 /* LocationManager.swift */,
+				8735E1A42085038A008BA9F4 /* NativeLocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		8735E1A52085038A008BA9F4 /* TrueNorthCorrector */ = {
+			isa = PBXGroup;
+			children = (
+				8735E1A62085038A008BA9F4 /* TrueNorthCorrector.swift */,
+			);
+			path = TrueNorthCorrector;
+			sourceTree = "<group>";
+		};
+		8735E1B0208503D7008BA9F4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8735E1CD2085044E008BA9F4 /* SCNVector3Extensions.swift */,
+				8735E1B1208503D7008BA9F4 /* ArrayExtensions.swift */,
+				8735E1B2208503D7008BA9F4 /* AutoLayout.swift */,
+				8735E1B3208503D7008BA9F4 /* Geometry.swift */,
+				8735E1B4208503D7008BA9F4 /* Notifier.swift */,
+				8735E1B5208503D7008BA9F4 /* TimerAction.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8735E1CF20851DBE008BA9F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8735E1D020851DBE008BA9F4 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8735E17120850305008BA9F4 /* PedestrianARNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8735E18620850306008BA9F4 /* Build configuration list for PBXNativeTarget "PedestrianARNavigation" */;
+			buildPhases = (
+				8735E16E20850305008BA9F4 /* Sources */,
+				8735E16F20850305008BA9F4 /* Frameworks */,
+				8735E17020850305008BA9F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PedestrianARNavigation;
+			productName = PedestrianARNavigation;
+			productReference = 8735E17220850305008BA9F4 /* PedestrianARNavigation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8735E16A20850305008BA9F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Yandex, LLC";
+				TargetAttributes = {
+					8735E17120850305008BA9F4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8735E16D20850305008BA9F4 /* Build configuration list for PBXProject "PedestrianARNavigation" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8735E16920850305008BA9F4;
+			productRefGroup = 8735E17320850305008BA9F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8735E17120850305008BA9F4 /* PedestrianARNavigation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8735E17020850305008BA9F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8735E17820850305008BA9F4 /* art.scnassets in Resources */,
+				8735E18220850306008BA9F4 /* LaunchScreen.storyboard in Resources */,
+				8735E17F20850306008BA9F4 /* Assets.xcassets in Resources */,
+				8735E17D20850305008BA9F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8735E16E20850305008BA9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8735E1A92085038A008BA9F4 /* AdvancedLocationEstimatesHolder.swift in Sources */,
+				8735E1B9208503D7008BA9F4 /* Notifier.swift in Sources */,
+				8735E1B8208503D7008BA9F4 /* Geometry.swift in Sources */,
+				8735E19320850340008BA9F4 /* RouteAnimationUtils.swift in Sources */,
+				8735E1B6208503D7008BA9F4 /* ArrayExtensions.swift in Sources */,
+				8735E19820850340008BA9F4 /* VectorMath.swift in Sources */,
+				8735E17A20850305008BA9F4 /* ViewController.swift in Sources */,
+				8735E1AD2085038A008BA9F4 /* LocationManager.swift in Sources */,
+				8735E1AF2085038A008BA9F4 /* TrueNorthCorrector.swift in Sources */,
+				8735E1AA2085038A008BA9F4 /* BasicLocationEstimatesHolder.swift in Sources */,
+				8735E1A72085038A008BA9F4 /* ARKitCoreLocationEngine.swift in Sources */,
+				8735E19720850340008BA9F4 /* VectorMath+SceneKit.swift in Sources */,
+				8735E1A82085038A008BA9F4 /* GeoExtensions.swift in Sources */,
+				8735E1AB2085038A008BA9F4 /* LocationEstimatesHolder.swift in Sources */,
+				8735E1CE2085044E008BA9F4 /* SCNVector3Extensions.swift in Sources */,
+				8735E19220850340008BA9F4 /* RouteNodes.swift in Sources */,
+				8735E19420850340008BA9F4 /* RouteArrowAnimation.swift in Sources */,
+				8735E19620850340008BA9F4 /* VectorMath+QuartzCore.swift in Sources */,
+				8735E17620850305008BA9F4 /* AppDelegate.swift in Sources */,
+				8735E1D320851E1F008BA9F4 /* MapViewController.swift in Sources */,
+				8735E1AC2085038A008BA9F4 /* SceneLocationEstimate+Extensions.swift in Sources */,
+				8735E19520850340008BA9F4 /* Utils.swift in Sources */,
+				8735E1BA208503D7008BA9F4 /* TimerAction.swift in Sources */,
+				8735E1B7208503D7008BA9F4 /* AutoLayout.swift in Sources */,
+				8735E1AE2085038A008BA9F4 /* NativeLocationManager.swift in Sources */,
+				8735E1C520850439008BA9F4 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8735E17B20850305008BA9F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8735E17C20850305008BA9F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8735E18020850306008BA9F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8735E18120850306008BA9F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8735E18420850306008BA9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8735E18520850306008BA9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8735E18720850306008BA9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 477EAT77S3;
+				INFOPLIST_FILE = PedestrianARNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yandex--LLC.PedestrianARNavigation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8735E18820850306008BA9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 477EAT77S3;
+				INFOPLIST_FILE = PedestrianARNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yandex--LLC.PedestrianARNavigation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8735E16D20850305008BA9F4 /* Build configuration list for PBXProject "PedestrianARNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8735E18420850306008BA9F4 /* Debug */,
+				8735E18520850306008BA9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8735E18620850306008BA9F4 /* Build configuration list for PBXNativeTarget "PedestrianARNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8735E18720850306008BA9F4 /* Debug */,
+				8735E18820850306008BA9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8735E16A20850305008BA9F4 /* Project object */;
+}
