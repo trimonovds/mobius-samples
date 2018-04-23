@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import PedestrianARNavigation
 
 class PedestrianARNavigationTests: XCTestCase {
@@ -33,6 +34,20 @@ class PedestrianARNavigationTests: XCTestCase {
             farDistanceSize: 50.0
         )
         XCTAssert(size == 75.0)
+    }
+
+    func testCLLocationCoordinate2DTransformLon() {
+        let center = CLLocationCoordinate2DMake(0, 0)
+        let lonMeters: CLLocationDistance = 111000
+        let result = center.transform(using: 0, longitudinalMeters: lonMeters)
+        print(result.lat, result.lon)
+    }
+
+    func testCLLocationCoordinate2DTransformLat() {
+        let center = CLLocationCoordinate2DMake(0, 0)
+        let latMeters: CLLocationDistance = 2 * .pi * GeometryConstants.EarthRadius / 4
+        let result = center.transform(using: latMeters, longitudinalMeters: 0.0)
+        print(result.lat, result.lon)
     }
 
     func testSizeIsEqualToCloseDistanceSizeWhenDistanceIsLessThenCloseDistance() {
