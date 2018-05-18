@@ -36,18 +36,30 @@ class PedestrianARNavigationTests: XCTestCase {
         XCTAssert(size == 75.0)
     }
 
+    func testTranslationToPosition() {
+
+        let coreLocationE1 = CLLocationCoordinate2D(latitude: 55.768382, longitude: 37.617810)
+        let coreLocationActualLocation2 = coreLocationE1.transform(using: -162.0, longitudinalMeters: 240.0)
+        let expectedLocation = CLLocationCoordinate2D(latitude: 55.766986, longitude: 37.621629)
+
+        let distance = metersBetween(coreLocationActualLocation2, expectedLocation)
+        XCTAssert(distance < 7.0)
+    }
+
     func testCLLocationCoordinate2DTransformLon() {
         let center = CLLocationCoordinate2DMake(0, 0)
         let lonMeters: CLLocationDistance = 111000
         let result = center.transform(using: 0, longitudinalMeters: lonMeters)
-        print(result.lat, result.lon)
+        XCTAssert(fabs(result.lat - 0.0) <= 1e-6)
+        XCTAssert(fabs(result.lon - 0.997130) <= 1e-6)
     }
 
     func testCLLocationCoordinate2DTransformLat() {
         let center = CLLocationCoordinate2DMake(0, 0)
         let latMeters: CLLocationDistance = 2 * .pi * GeometryConstants.EarthRadius / 4
         let result = center.transform(using: latMeters, longitudinalMeters: 0.0)
-        print(result.lat, result.lon)
+        XCTAssert(fabs(result.lat - 90.505170) <= 1e-6)
+        XCTAssert(fabs(result.lon - 0.0) <= 1e-6)
     }
 
     func testSizeIsEqualToCloseDistanceSizeWhenDistanceIsLessThenCloseDistance() {
